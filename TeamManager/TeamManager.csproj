@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D905B5CB-785D-4280-A09B-70C77DFC1AFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TeamManager</RootNamespace>
+    <AssemblyName>TeamManager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v20.2.Drawing, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPdfViewer.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2020.3.1020.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.UI, Version=2020.3.1020.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2020.3.1020.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewEmployeeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewEmployeeFrm.designer.cs">
+      <DependentUpon>AddNewEmployeeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComeFrom.cs" />
+    <Compile Include="commentBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="commentBox.Designer.cs">
+      <DependentUpon>commentBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommentsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommentsFrm.Designer.cs">
+      <DependentUpon>CommentsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCategoryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCategoryFrm.Designer.cs">
+      <DependentUpon>CreateCategoryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewTaskFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateNewTaskFrm.Designer.cs">
+      <DependentUpon>CreateNewTaskFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewTeamFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateNewTeamFrm.designer.cs">
+      <DependentUpon>CreateNewTeamFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditEmployeeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditEmployeeFrm.Designer.cs">
+      <DependentUpon>EditEmployeeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditFilesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditFilesFrm.Designer.cs">
+      <DependentUpon>EditFilesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSubTaskList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSubTaskList.Designer.cs">
+      <DependentUpon>EditSubTaskList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageViewerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageViewerFrm.Designer.cs">
+      <DependentUpon>ImageViewerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PdfViewerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PdfViewerFrm.Designer.cs">
+      <DependentUpon>PdfViewerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskDetailsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskDetailsFrm.Designer.cs">
+      <DependentUpon>TaskDetailsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="Team.cs" />
+    <Compile Include="TeamsListFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamsListFrm.designer.cs">
+      <DependentUpon>TeamsListFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WordViewerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WordViewerFrm.Designer.cs">
+      <DependentUpon>WordViewerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeamDetailsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamDetailsFrm.Designer.cs">
+      <DependentUpon>TeamDetailsFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddNewEmployeeFrm.resx">
+      <DependentUpon>AddNewEmployeeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="commentBox.resx">
+      <DependentUpon>commentBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommentsFrm.resx">
+      <DependentUpon>CommentsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCategoryFrm.resx">
+      <DependentUpon>CreateCategoryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateNewTaskFrm.resx">
+      <DependentUpon>CreateNewTaskFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateNewTeamFrm.resx">
+      <DependentUpon>CreateNewTeamFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditEmployeeFrm.resx">
+      <DependentUpon>EditEmployeeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditFilesFrm.resx">
+      <DependentUpon>EditFilesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSubTaskList.resx">
+      <DependentUpon>EditSubTaskList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageViewerFrm.resx">
+      <DependentUpon>ImageViewerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfViewerFrm.resx">
+      <DependentUpon>PdfViewerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="TaskDetailsFrm.resx">
+      <DependentUpon>TaskDetailsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamDetailsFrm.resx">
+      <DependentUpon>TeamDetailsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TeamsListFrm.resx">
+      <DependentUpon>TeamsListFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WordViewerFrm.resx">
+      <DependentUpon>WordViewerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
